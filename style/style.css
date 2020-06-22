@@ -1,0 +1,26 @@
+body{
+    background-color: aquamarine;
+    color: blueviolet;
+}
+
+div{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#navbar{
+    background-color: blue;
+    color: brown;
+}
+
+#banner{
+
+}
+
+#content{
+    padding: 5px;
+}
+
+#footer{
+ text-align: center;
+}
