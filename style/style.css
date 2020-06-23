@@ -1,26 +1,48 @@
-body{
-    background-color: aquamarine;
-    color: blueviolet;
-}
-
 div{
-    border: 1px solid black;
+    border: 1px solid grey;
     padding: 5px;
 }
-
+body{
+    background-color: black;
+    color:white;
+}
 #navbar{
-    background-color: blue;
-    color: brown;
-}
 
+} 
 #banner{
-
+    background-color: grey;
 }
-
+#banner,#navbar,#footer{
+    height: 25px;
+}
 #content{
-    padding: 5px;
+    padding:5px;
+    height:calc( 100vh - 150px);
+}
+#footer{
+    text-align:center;
+}
+#banner, #footer{
+    color:tomato
+}
+.bold{
+    font-weight: 900;
 }
 
-#footer{
- text-align: center;
+/* Section du tchat */
+#tchat{
+    height:calc( 100% - 10px);
+    width:calc( 100% - 10px);
+    /* background-color: slateblue; */
+}
+#tchat-messages{
+    width:calc(64% - 10px);
+}
+#tchat-users{
+    width:calc(35% - 10px);
+    margin-left:10px ;
+}
+#tchat-users, #tchat-messages{
+    display: inline-block;
+    height: calc( 100% - 35px);
 }

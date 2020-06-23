@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mon projet</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <title>Document</title>
+
+<!-- Latest compiled and minified CSS & JS -->
+<link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+    <link type="text/css" rel="stylesheet" href="/style/style2.css">
 </head>
+
 <body>
     <div id="app">
-        <div id="banner">Banner</div>
-        <div id="navbar">Navbar</div>
-        <div id="content">Content</div>
-        <div id="footer">Orsys &copy;2020</div>
+        <div id="banner">Tchat<span style="color:greenyellow">.</span><span style="color:tomato;font-style:italic">js</span> </div>
+        <div id="navbar">
+            
+            <div class="navbar navbar-inverse">
+                <!-- <a class="navbar-brand" href="#">Title</a> -->
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div id="content" >
+            <div id="tchat">
+                <div id="tchat-messages">
+                    <div class="message">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ratione, vel asperiores fugiat error, officia suscipit perspiciatis nobis at doloribus molestiae odio saepe quidem sed aperiam dignissimos tempore facilis sequi.
+                    </div>
+                    <div class="message mine">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ratione, vel asperiores fugiat error, officia suscipit perspiciatis nobis at doloribus molestiae odio saepe quidem sed aperiam dignissimos tempore facilis sequi.
+                    </div>
+                    <div class="message">hello</div>
+                </div>
+                <div id="tchat-users">
+                    <div class="user">
+                        <img src="/img/zoiberg.png" alt="portrait zoidberg">
+                        <div class="user-nick">Zoidberg</div>
+                    </div>
+                    <div class="user">
+                        <img src="/img/gollum.png" alt="">
+                        <div class="user-nick">Gollum</div>
+                    </div>
+                  
+                </div>
+                <div id="tchat-sender">
+                    <form action="#">
+                        <input type="text" id="message-outbox"/>
+                        <select id="adresse-to">
+                            <option value="*" selected="selected">All</option>
+                        </select>
+                        <input type="submit" value="Envoyer"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="bold">Orsys &copy;2020</div>
     </div>
 </body>
+
 </html>
