@@ -47,19 +47,19 @@
                     <div class="message">hello</div>
                 </div>
                 <div id="tchat-users">
-                    <div class="user">
-                        <img src="/img/zoiberg.png" alt="portrait zoidberg">
+                    <!-- <div class="user">
+                        <img src="/img/zoidberg.png" alt="portrait zoidberg">
                         <div class="user-nick">Zoidberg</div>
                     </div>
                     <div class="user">
                         <img src="/img/gollum.png" alt="">
                         <div class="user-nick">Gollum</div>
-                    </div>
+                    </div> -->
 
                 </div>
                 <div id="tchat-sender">
-                    <form action="#">
-                        <input type="text" id="message-outbox" placeholder="Saisissez du texte"/>
+                    <form action="#" name="sender">
+                        <input type="text" id="message-outbox" placeholder="Saisissez du text" name="message" />
                         <select id="adresse-to">
                             <option value="*" selected="selected">All</option>
                         </select>
@@ -70,7 +70,9 @@
         </div>
         <div id="footer" class="bold">Orsys &copy;2020</div>
     </div>
-    <script src="./app/app.js"></script>
+    <script src="/app/config.js"></script>
+    <script src="/app/crud.js"></script>
+    <script src="/app/app.js"></script>
 </body>
 
 </html>
